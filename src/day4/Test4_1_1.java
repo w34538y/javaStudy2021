@@ -1,5 +1,6 @@
 package day4;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test4_1_1 {
@@ -27,20 +28,20 @@ public class Test4_1_1 {
 		}
 		sc.close();
 		
+		int k = 0;
 		for(int i = 0; i < 5; i++) {
 			for(int j = 0; j < 5; j++) {
 				if(arr[i] == input[j]) {
-					b[i] = i;
+					b[k] = i;
+					k++;
 				}
 				else {
-					b[i] = -1;
+					b[k] = -1;
 				}
 			}
 		}
 		
-		for(int i = 0; i < 5; i++) {
-			System.out.println(b[i]);
-		}
+		System.out.println(Arrays.toString(b));
 		
 	}
 
