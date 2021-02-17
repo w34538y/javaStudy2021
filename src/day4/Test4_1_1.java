@@ -26,18 +26,16 @@ public class Test4_1_1 {
 		for(int i = 0; i < 5; i++) {
 			input[i] = sc.nextInt();
 		}
-		sc.close();
-		
-		int k = 0;
-		for(int i = 0; i < 5; i++) {
-			for(int j = 0; j < 5; j++) {
-				if(arr[i] == input[j]) {
-					b[k] = i;
-					k++;
+		sc.close(); 
+		int i = 0;
+		for(int j = 0; j < 5; j++) {
+			for(int k = 0; k < 5; k++) {
+				if(input[j] == arr[k]) {
+					b[i] = k;
+					if(i < 4)
+						i++;
 				}
-				else {
-					b[k] = -1;
-				}
+				//-1 넣는 부분 구현이 필요함
 			}
 		}
 		
