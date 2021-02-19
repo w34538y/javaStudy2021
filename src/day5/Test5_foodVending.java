@@ -50,7 +50,7 @@ public class Test5_foodVending {
 						int update_tickets = scan.nextInt();
 						tickets += update_tickets;
 						
-						System.out.println("충전된 식권 수 :" + update_tickets +"총 식권 수 : "+ tickets);
+						System.out.println("충전된 식권 수 :" + update_tickets +" 총 식권 수 : "+ tickets);
 					}
 					else if(choice == 2) {
 						System.out.println("------ 잔돈 충전 기능입니다 ------");
@@ -66,7 +66,7 @@ public class Test5_foodVending {
 						int sel_charge = scan.nextInt();
 						charges[sel_charge - 1] += sel_charge;
 						
-						System.out.println("충전된 권종 :" + money[sel_money - 1] +"총 매수 : "+ charges[sel_charge - 1]);
+						System.out.println("충전된 권종 :" + money[sel_money - 1] +" 총 매수 : "+ charges[sel_charge - 1]);
 					}
 					else if(choice == 3) {
 						break;
