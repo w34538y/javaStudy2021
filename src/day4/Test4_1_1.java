@@ -12,7 +12,7 @@ public class Test4_1_1 {
 		int input[] = new int[5];
 		
 		// 숫자를 5개 입력받고 arr 배열안에 입력한값이 있을때마다 
-		// b배열안에 해당 값의 인덱스를 차례대로 저장할려고 한다. 
+		// b배열안에 해당 값의 인덱스를 차례대로 저장할려고 한다. 9
 		// 조건) 만약에 입력한 숫자가 arr 에 없으면 인덱스 대신 -1 저장 
 			
 		// 예) 10, 20, 10, 1, 50
@@ -29,14 +29,14 @@ public class Test4_1_1 {
 		sc.close(); 
 		int i = 0;
 		for(int j = 0; j < 5; j++) {
+			b[i] = -1;
 			for(int k = 0; k < 5; k++) {
 				if(input[j] == arr[k]) {
 					b[i] = k;
-					if(i < 4)
-						i++;
 				}
-				//-1 넣는 부분 구현이 필요함
 			}
+			if(i < 4)
+				i++;	
 		}
 		
 		System.out.println(Arrays.toString(b));
